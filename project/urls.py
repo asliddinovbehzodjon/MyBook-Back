@@ -45,7 +45,7 @@ urlpatterns += i18n_patterns(
     re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     
     path('api/book/',include('books.urls')),
-    path('dashboard/', admin.site.urls),
+    path('', admin.site.urls),
   
 )
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
