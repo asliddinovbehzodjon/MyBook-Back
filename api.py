@@ -1,3 +1,6 @@
-BASE_URL = 'http://127.0.0.1:8000/en/api/book/change'
+BASE_URL = 'http://127.0.0.1:8000/api/book/bot/'
 import requests
-requests.get(url=f"{BASE_URL}/123456/ru/")
+requests.post(url=BASE_URL,data={
+    'name':'Behzod',
+    't_id':123457
+})
